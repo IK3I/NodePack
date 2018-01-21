@@ -1,3 +1,4 @@
 v0.1.0
 
-Created package with basic infrastructure and server with test handler.
+Created package with basic infrastructure
+Created server with test handler
