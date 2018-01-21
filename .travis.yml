@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+  - stable
+
+before_install:
+  - chmod +x node_modules/istanbul/lib/cli.js
+  
+install:
+  - npm install
+
+script:
+  - npm run cover
+  
+#send coverage data to Coveralls
+after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"

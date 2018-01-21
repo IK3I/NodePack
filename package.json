@@ -1,0 +1,35 @@
+{
+  "name": "roundabout-files",
+  "version": "0.1.0",
+  "description": "A simple self contained node server that facilitates data transfer through http interfaces. Can be configured for file or string transfers.",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "man": "man"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IK3I/Roundabout-Files.git"
+  },
+  "keywords": [
+    "file",
+    "transfer",
+    "interface"
+  ],
+  "author": "James Salmon <k3.inquiries@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IK3I/Roundabout-Files/issues"
+  },
+  "homepage": "https://github.com/IK3I/Roundabout-Files#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.0"
+  }
+}
