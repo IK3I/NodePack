@@ -1,12 +1,7 @@
-var http = require('http');
+//sets the various configs and opens server
+
+var server = require('./lib/serverDef');
 var port = 4343;
-
-var requestHandler = (req, res) => {
-	console.log(req.url);
-	res.end('Test success');
-};
-
-var server = http.createServer(requestHandler);
 
 server.listen(port, (err) => {
 	if (err) {
@@ -15,3 +10,5 @@ server.listen(port, (err) => {
 	
 	console.log('server listening on', port);
 });
+
+// Exposes server for testings and scripts
